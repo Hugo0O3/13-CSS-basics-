@@ -1,5 +1,10 @@
 ﻿# CSS TRAINING
 
+C'est ici que ça se passe ➡️➡️🔗 https://hugo0o3.github.io/PixelPerfect-/
+https://hugo0o3.github.io/13-CSS-basics-/ex7/index.html
+
+![alt text](./images/yuimetal.gif)
+
 **Greetings young padawans !!!**
 
 Want to become a CSS Jedi ?? Let's get started !!!
