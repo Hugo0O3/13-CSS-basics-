@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Allan:wght@400;700&family=Barlow&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Symbols:wght@100..900&family=Open+Sans&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 1440px;
+    height: 1518px;
+}
+
+/* Barre de navigation */
+header {
+    background-color: #3a3d46;
+}
+
+.containerHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header>section>img {
+    width: 151px;
+    height: 30px;
+    margin: 17px 0px 18px 0px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 5.5%;
+    text-align: center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 9px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in;
+}
+
+nav ul li a:hover {
+    background-color: #007DFC;
+}
+
+header {
+    margin: 0 auto;
+}
+
+/* Section haut */
+
+.hautContainer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+    width: 100%;
+}
+
+.hautGauche {
+    grid-column: 1 / 6;
+}
+
+.hautDroite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 7 / 13;
+}
+
+.hautDroite img {
+    width: 590px;
+    height: 590px;
+}
+
+main {}
+
+.haut {
+    background-color: #353535;
+}
+
+.bas {
+    background-color: #F6F6F6;
+}
