@@ -3,6 +3,7 @@
 C'est ici que ça se passe ➡️➡️
 🔗 https://hugo0o3.github.io/PixelPerfect-/
 🔗 https://hugo0o3.github.io/13-CSS-basics-/ex7/index.html
+🔗 https://hugo0o3.github.io/13-CSS-basics-/ex7Bis/index.html
 
 ![alt text](./images/yuimetal.gif)
 

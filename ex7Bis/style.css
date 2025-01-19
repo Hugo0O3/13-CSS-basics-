@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Allan:wght@400;700&family=Barlow&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Symbols:wght@100..900&family=Open+Sans&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allan:wght@400;700&family=Barlow&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Symbols:wght@100..900&family=Open+Sans&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:root {
+    --margin-left-right-margin: 0px 120px;
+    --font-family-all-font-family: 'Raleway';
 }
 
 body {
@@ -20,6 +26,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: var(--margin-left-right-margin);
 }
 
 header>section>img {
@@ -62,22 +69,39 @@ header {
 
 /* Section haut */
 
+.haut {
+    background-color: #353535;
+    padding: var(--margin-left-right-margin);
+}
+
 .hautContainer {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 20px;
     width: 100%;
+    align-items: center;
+    margin-bottom: 82px;
 }
 
 .hautGauche {
     grid-column: 1 / 6;
+    width: 463px;
+    height: 327px;
+    align-self: center;
+}
+
+.hautGauche h1,
+h2,
+p,
+a {
+    font-family: var(--font-family-all-font-family);
 }
 
 .hautDroite {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     grid-column: 7 / 13;
+    width: 590px;
+    height: 590px;
+    align-self: center;
 }
 
 .hautDroite img {
@@ -85,12 +109,136 @@ header {
     height: 590px;
 }
 
-main {}
-
-.haut {
-    background-color: #353535;
+h1 {
+    font-weight: 800;
+    font-size: 65px;
+    line-height: 65px;
+    letter-spacing: 4%;
+    align-self: center;
+    padding: 0px 8px 22px 4px;
 }
+
+.hautGauche h2 {
+    color: #007DFC;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 26px;
+    letter-spacing: 4%;
+    padding: 0 0 23px 4px;
+}
+
+.hautGauche .barreHorizontale {
+    width: 463px;
+    border: 1.5px solid #949494;
+    margin-bottom: 18px;
+}
+
+.hautGauche p {
+    width: 387px;
+    height: 105px;
+    color: white;
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 2%;
+    text-align: left;
+    margin-bottom: 23px;
+}
+
+.hautGauche a {
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 2%;
+    color: black;
+    text-decoration: none;
+}
+
+.lienP {
+    background-color: #FFB800;
+    padding: 10px 27px;
+    gap: 10px;
+    border-radius: 45px;
+    width: 141px;
+    height: 41px;
+    transition: background-color 0.3s ease-in;
+}
+
+.lienP:hover {
+    background-color: #007DFC;
+}
+
+.lienP a:hover {
+    color: white;
+}
+
+h1>span:nth-child(1) {
+    color: white;
+}
+
+h1>span:nth-child(2) {
+    color: #FFB800;
+}
+
+h1>span:nth-child(3) {
+    color: white;
+}
+
+/* Section bas */
 
 .bas {
     background-color: #F6F6F6;
+    width: 1440px;
+    height: 823px;
+}
+
+.bas h2 {
+    font-family: var(--font-family-all-font-family);
+    font-weight: 400px;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 2%;
+}
+
+.bas .barreHorizontaleH2 {
+    width: 145px;
+    border: 1px solid #000000;
+    margin-bottom: 50px;
+    transform: translate(50px, 0px);
+}
+
+.basContainer {
+    margin: var(--margin-left-right-margin);
+}
+
+.basGrid {
+    display: grid;
+    grid-template-columns: 387px 387px 387px;
+    grid-template-rows: 269px 269px;
+    grid-gap: 20px;
+}
+
+.basGrid section:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1 / 2;
+}
+
+.basGrid section:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.basGrid section:nth-child(3) {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.basGrid section:nth-child(4) {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.basGrid section:nth-child(5) {
+    grid-column: 3;
+    grid-row: 2;
 }
